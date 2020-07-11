@@ -20,6 +20,6 @@ app.get("/home", function(req, res){
 	
 });
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
 	console.log('In a galaxy far far away... CAT app has now started...');
 });
